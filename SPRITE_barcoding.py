@@ -142,7 +142,7 @@ Hamming_dist = 2
 for cate in cate_seq_tagID:
     seq_tagID = cate_seq_tagID[cate]
     for seq, tagID in seq_tagID.items():
-        new_pool = all_mutants(seq, Hamming_dist)
+        new_pool =all_mutants(seq, Hamming_dist)
         for new_seq in new_pool:
             seq_tagID.update({new_seq:tagID})
 
